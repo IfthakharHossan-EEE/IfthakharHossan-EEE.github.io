@@ -130,4 +130,25 @@
     });
 
 })(jQuery);
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<!-- Your main JS -->
+<script>
+$(document).ready(function() {
+    if ($('.top-header h2').length) {
+        var typed_strings = $('.top-header p').text();
+        new Typed('.top-header h2', {
+            strings: typed_strings.split(', '),
+            typeSpeed: 100,
+            backSpeed: 20,
+            smartBackspace: false,
+            loop: true
+        });
+    }
+});
+</script>
+
+
 
